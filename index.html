@@ -140,11 +140,11 @@
     /* HERO */
     .hero{ padding: 34px 0 14px; }
 
-    .heroGrid{
-      display:grid; gap:22px;
-      grid-template-columns: 1.25fr .75fr;
-      align-items:stretch;
-    }
+.heroGrid{
+  display:grid; gap:22px;
+  grid-template-columns: 1.25fr .75fr;
+  align-items:start; /* <-- prevents the left side from stretching */
+}
     @media (max-width: 920px){
       .heroGrid{grid-template-columns:1fr}
       .ctaRow{justify-content:flex-start}
@@ -161,11 +161,11 @@
       box-shadow: var(--shadow);
       overflow:hidden;
     }
-    .heroCard{
-      padding: 26px;
-      position:relative;
-      min-height: 420px;
-    }
+ .heroCard{
+  padding: 26px;
+  position:relative;
+  min-height: unset; /* or just delete the min-height line */
+}
     .pill{
       display:inline-flex; gap:10px; align-items:center;
       padding:8px 12px;
