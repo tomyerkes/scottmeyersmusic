@@ -1,4 +1,3 @@
-```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -393,6 +392,30 @@
       box-shadow: 0 0 0 6px rgba(21,16,11,.14);
     }
     .hide{display:none !important}
+
+    .galleryItem{
+  border-radius: 16px;
+  border:1px solid rgba(243,239,232,.14);
+  overflow:hidden;
+  display:block;
+  background: rgba(243,239,232,.02);
+  box-shadow: 0 12px 26px rgba(0,0,0,.25);
+  transition: transform .12s ease, border-color .12s ease, filter .12s ease;
+}
+
+.galleryItem:hover{
+  transform: translateY(-2px);
+  border-color: rgba(243,239,232,.22);
+  filter: brightness(1.04);
+}
+
+.galleryItem img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  aspect-ratio: 4/3;
+}
   </style>
 </head>
 
@@ -607,20 +630,34 @@
           </div>
         </div>
 
-        <div class="panel">
-          <h3 style="margin:0 0 10px;">Photo gallery</h3>
-          <p class="small" style="margin:0 0 10px;">Drop performance photos here (stage, crowd, venue signage, selfies with guests).</p>
-          <div class="gallery">
-            <div class="https://lh3.googleusercontent.com/pw/AP1GczOoi8Sj3B1H7fTNPUmlG6ZRiEqmGEeIfb5kErNNWarYY6JRchP4hU811e2GV2tHjPd06kXVLj7pgr60aqbjgqbjhgSU0VTvxGr9PCOvTXg6xLCFeIzdcZbKQv2xVhs1gZv8jMboRndko2e0P8z9-E3FDg=w765-h1024-s-no-gm?authuser=0">Photo 1</div>
-            <div class="https://lh3.googleusercontent.com/pw/AP1GczM0-isGGf-p0iuP9bRpuZi8bAtwLC7dFXMOiIMLrNO1J44Zxa7ucnxfk3yDhlQucdLOh-8ISmOGNIwq0TOCO1NOZpcL_egnhpH73mghaZxggvRNFc6UUDIQlVF4QWQF93gzFIGC7XyOvkuUv5lDjBCHDA=w1271-h1271-s-no-gm?authuser=0">Photo 2</div>
-            <div class="https://lh3.googleusercontent.com/pw/AP1GczP-Gj1KN9kLD4aOWZb8fJ-I_kcwKGR44Rh0Loe-mOstSdcvcjNRMvxElXmH4ESmGoBqFxtm3Jle6Ryc4H9Qpdh5SzkyID4Wn_TYFcs5sGztpy8yU8Kf-JCelKgZssmHzSB05U0XhcF5cFHmT4vzuWD_RA=w765-h1024-s-no-gm?authuser=0">Photo 3</div>
-            <div class="https://lh3.googleusercontent.com/pw/AP1GczMgwF0HGtUVdQSmbk3mHNdw1FoXYh-LfE-9ujVkyPQ60YykIeQ8bLaGlFnzZZBZ9T_rNO2soxHfeOWgzJ8mCELi7cW3O4Yd0DzxQ4GBZf8C6T5WdMp-n0oQJJLuGuB4hcOSdyafIjYD1pFW3bz8P3jpdg=w953-h1271-s-no-gm?authuser=0">Photo 4</div>
-            <div class="https://lh3.googleusercontent.com/pw/AP1GczO4tb0ehu8lkxdzOqOhVMbSe5FgNbRaNYAGfPme3EH1U42bRKRKHImDx_rtgperTPkdoOq0I3JqxzYOjPSAovPKgDwi20AXStDf5qUMIUT30NUYTHfwVIFEqsHpJGnxodFRYC784U1gHBHQRoJt1ZalcA=w716-h1271-s-no-gm?authuser=0">Photo 5</div>
-            <div class="ph">Photo 6</div>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="panel">
+  <h3 style="margin:0 0 10px;">Photo gallery</h3>
+  <p class="small" style="margin:0 0 10px;">Drop performance photos here (stage, crowd, venue signage, selfies with guests).</p>
+
+  <div class="gallery">
+    <a class="galleryItem" href="https://lh3.googleusercontent.com/pw/AP1GczOoi8Sj3B1H7fTNPUmlG6ZRiEqmGEeIfb5kErNNWarYY6JRchP4hU811e2GV2tHjPd06kXVLj7pgr60aqbjgqbjhgSU0VTvxGr9PCOvTXg6xLCFeIzdcZbKQv2xVhs1gZv8jMboRndko2e0P8z9-E3FDg=w765-h1024-s-no-gm?authuser=0" target="_blank" rel="noopener">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOoi8Sj3B1H7fTNPUmlG6ZRiEqmGEeIfb5kErNNWarYY6JRchP4hU811e2GV2tHjPd06kXVLj7pgr60aqbjgqbjhgSU0VTvxGr9PCOvTXg6xLCFeIzdcZbKQv2xVhs1gZv8jMboRndko2e0P8z9-E3FDg=w765-h1024-s-no-gm?authuser=0" alt="Scott Meyers performance photo 1">
+    </a>
+
+    <a class="galleryItem" href="https://lh3.googleusercontent.com/pw/AP1GczM0-isGGf-p0iuP9bRpuZi8bAtwLC7dFXMOiIMLrNO1J44Zxa7ucnxfk3yDhlQucdLOh-8ISmOGNIwq0TOCO1NOZpcL_egnhpH73mghaZxggvRNFc6UUDIQlVF4QWQF93gzFIGC7XyOvkuUv5lDjBCHDA=w1271-h1271-s-no-gm?authuser=0" target="_blank" rel="noopener">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczM0-isGGf-p0iuP9bRpuZi8bAtwLC7dFXMOiIMLrNO1J44Zxa7ucnxfk3yDhlQucdLOh-8ISmOGNIwq0TOCO1NOZpcL_egnhpH73mghaZxggvRNFc6UUDIQlVF4QWQF93gzFIGC7XyOvkuUv5lDjBCHDA=w1271-h1271-s-no-gm?authuser=0" alt="Scott Meyers performance photo 2">
+    </a>
+
+    <a class="galleryItem" href="https://lh3.googleusercontent.com/pw/AP1GczP-Gj1KN9kLD4aOWZb8fJ-I_kcwKGR44Rh0Loe-mOstSdcvcjNRMvxElXmH4ESmGoBqFxtm3Jle6Ryc4H9Qpdh5SzkyID4Wn_TYFcs5sGztpy8yU8Kf-JCelKgZssmHzSB05U0XhcF5cFHmT4vzuWD_RA=w765-h1024-s-no-gm?authuser=0" target="_blank" rel="noopener">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczP-Gj1KN9kLD4aOWZb8fJ-I_kcwKGR44Rh0Loe-mOstSdcvcjNRMvxElXmH4ESmGoBqFxtm3Jle6Ryc4H9Qpdh5SzkyID4Wn_TYFcs5sGztpy8yU8Kf-JCelKgZssmHzSB05U0XhcF5cFHmT4vzuWD_RA=w765-h1024-s-no-gm?authuser=0" alt="Scott Meyers performance photo 3">
+    </a>
+
+    <a class="galleryItem" href="https://lh3.googleusercontent.com/pw/AP1GczMgwF0HGtUVdQSmbk3mHNdw1FoXYh-LfE-9ujVkyPQ60YykIeQ8bLaGlFnzZZBZ9T_rNO2soxHfeOWgzJ8mCELi7cW3O4Yd0DzxQ4GBZf8C6T5WdMp-n0oQJJLuGuB4hcOSdyafIjYD1pFW3bz8P3jpdg=w953-h1271-s-no-gm?authuser=0" target="_blank" rel="noopener">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczMgwF0HGtUVdQSmbk3mHNdw1FoXYh-LfE-9ujVkyPQ60YykIeQ8bLaGlFnzZZBZ9T_rNO2soxHfeOWgzJ8mCELi7cW3O4Yd0DzxQ4GBZf8C6T5WdMp-n0oQJJLuGuB4hcOSdyafIjYD1pFW3bz8P3jpdg=w953-h1271-s-no-gm?authuser=0" alt="Scott Meyers performance photo 4">
+    </a>
+
+    <a class="galleryItem" href="https://lh3.googleusercontent.com/pw/AP1GczO4tb0ehu8lkxdzOqOhVMbSe5FgNbRaNYAGfPme3EH1U42bRKRKHImDx_rtgperTPkdoOq0I3JqxzYOjPSAovPKgDwi20AXStDf5qUMIUT30NUYTHfwVIFEqsHpJGnxodFRYC784U1gHBHQRoJt1ZalcA=w716-h1271-s-no-gm?authuser=0" target="_blank" rel="noopener">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczO4tb0ehu8lkxdzOqOhVMbSe5FgNbRaNYAGfPme3EH1U42bRKRKHImDx_rtgperTPkdoOq0I3JqxzYOjPSAovPKgDwi20AXStDf5qUMIUT30NUYTHfwVIFEqsHpJGnxodFRYC784U1gHBHQRoJt1ZalcA=w716-h1271-s-no-gm?authuser=0" alt="Scott Meyers performance photo 5">
+    </a>
+
+    <div class="ph">Photo 6</div>
+  </div>
+</div>
 
     <!-- BOOKING -->
     <section class="section" id="rates">
